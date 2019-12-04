@@ -7,7 +7,7 @@ pacman::p_load(tidyverse,
 
 #function to wrap tween from tweenr
 tween_wrap<-function(x){
-  unlist(tween(c(0,x),10))
+  unlist(tween(c(0,x),10, ease = "quadratic-in"))
 }
 
 
